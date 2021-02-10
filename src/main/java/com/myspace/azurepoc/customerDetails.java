@@ -6,12 +6,47 @@ package com.myspace.azurepoc;
 
 public class customerDetails implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public customerDetails() {
-    }
+	@org.kie.api.definition.type.Label(value = "firstName")
+	private java.lang.String firstName;
+	@org.kie.api.definition.type.Label(value = "location")
+	private java.lang.String location;
+	@org.kie.api.definition.type.Label(value = "country")
+	private java.lang.String country;
 
+	public customerDetails() {
+	}
 
+	public java.lang.String getFirstName() {
+		return this.firstName;
+	}
 
+	public void setFirstName(java.lang.String firstName) {
+		this.firstName = firstName;
+	}
+
+	public java.lang.String getLocation() {
+		return this.location;
+	}
+
+	public void setLocation(java.lang.String location) {
+		this.location = location;
+	}
+
+	public java.lang.String getCountry() {
+		return this.country;
+	}
+
+	public void setCountry(java.lang.String country) {
+		this.country = country;
+	}
+
+	public customerDetails(java.lang.String firstName,
+			java.lang.String location, java.lang.String country) {
+		this.firstName = firstName;
+		this.location = location;
+		this.country = country;
+	}
 
 }

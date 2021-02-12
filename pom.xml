@@ -9,7 +9,7 @@
   <name>AzurePoc</name>
   <description></description>
   <dependencies>
-    <dependency>
+    <!--<dependency>
       <groupId>com.thoughtworks.xstream</groupId>
       <artifactId>xstream</artifactId>
       <version>1.4.10</version>
@@ -38,7 +38,7 @@
       <artifactId>optaplanner-persistence-jaxb</artifactId>
       <version>7.11.0.Final-redhat-00003</version>
       <scope>provided</scope>
-    </dependency>
+    </dependency>-->
     <dependency>
       <groupId>org.kie</groupId>
       <artifactId>kie-api</artifactId>

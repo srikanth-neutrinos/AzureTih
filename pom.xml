@@ -5,7 +5,7 @@
   <groupId>com.myspace</groupId>
   <artifactId>AzurePoc</artifactId>
   <version>1.0.0</version>
-  <packaging>kjar</packaging>
+  <packaging>war</packaging>
   <name>AzurePoc</name>
   <description></description>
 </project>

@@ -4,8 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.myspace</groupId>
   <artifactId>AzurePoc</artifactId>
-  <version>1.0.0</version>
-  <packaging>jar</packaging>
+  <version>1.0.1</version>
   <name>AzurePoc</name>
   <description></description>
 </project>

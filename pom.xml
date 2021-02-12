@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.myspace</groupId>
   <artifactId>AzurePoc</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>kjar</packaging>
   <name>AzurePoc</name>
   <description></description>
@@ -51,7 +51,7 @@
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
-        <version>7.11.0.Final-redhat-00003</version>
+        <version>7.48.0.Final</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>

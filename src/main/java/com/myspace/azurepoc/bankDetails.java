@@ -6,12 +6,47 @@ package com.myspace.azurepoc;
 
 public class bankDetails implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public bankDetails() {
-    }
+	@org.kie.api.definition.type.Label(value = "bankName")
+	private java.lang.String bankName;
+	@org.kie.api.definition.type.Label(value = "bankLocation")
+	private java.lang.String bankLocation;
+	@org.kie.api.definition.type.Label(value = "country")
+	private java.lang.String country;
 
+	public bankDetails() {
+	}
 
+	public java.lang.String getBankName() {
+		return this.bankName;
+	}
 
+	public void setBankName(java.lang.String bankName) {
+		this.bankName = bankName;
+	}
+
+	public java.lang.String getBankLocation() {
+		return this.bankLocation;
+	}
+
+	public void setBankLocation(java.lang.String bankLocation) {
+		this.bankLocation = bankLocation;
+	}
+
+	public java.lang.String getCountry() {
+		return this.country;
+	}
+
+	public void setCountry(java.lang.String country) {
+		this.country = country;
+	}
+
+	public bankDetails(java.lang.String bankName,
+			java.lang.String bankLocation, java.lang.String country) {
+		this.bankName = bankName;
+		this.bankLocation = bankLocation;
+		this.country = country;
+	}
 
 }

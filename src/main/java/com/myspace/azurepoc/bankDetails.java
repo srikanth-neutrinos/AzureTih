@@ -8,12 +8,18 @@ public class bankDetails implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label(value = "bankName")
+	@org.kie.api.definition.type.Label("bankName")
 	private java.lang.String bankName;
-	@org.kie.api.definition.type.Label(value = "bankLocation")
+	@org.kie.api.definition.type.Label("bankLocation")
 	private java.lang.String bankLocation;
-	@org.kie.api.definition.type.Label(value = "country")
+	@org.kie.api.definition.type.Label("country")
 	private java.lang.String country;
+
+	@org.kie.api.definition.type.Label(value = "streetName")
+	private java.lang.String streetName;
+
+	@org.kie.api.definition.type.Label(value = "contactNumber")
+	private java.lang.String contactNumber;
 
 	public bankDetails() {
 	}
@@ -42,11 +48,30 @@ public class bankDetails implements java.io.Serializable {
 		this.country = country;
 	}
 
+	public java.lang.String getStreetName() {
+		return this.streetName;
+	}
+
+	public void setStreetName(java.lang.String streetName) {
+		this.streetName = streetName;
+	}
+
+	public java.lang.String getContactNumber() {
+		return this.contactNumber;
+	}
+
+	public void setContactNumber(java.lang.String contactNumber) {
+		this.contactNumber = contactNumber;
+	}
+
 	public bankDetails(java.lang.String bankName,
-			java.lang.String bankLocation, java.lang.String country) {
+			java.lang.String bankLocation, java.lang.String country,
+			java.lang.String streetName, java.lang.String contactNumber) {
 		this.bankName = bankName;
 		this.bankLocation = bankLocation;
 		this.country = country;
+		this.streetName = streetName;
+		this.contactNumber = contactNumber;
 	}
 
 }

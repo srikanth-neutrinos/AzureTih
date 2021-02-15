@@ -15,11 +15,17 @@ public class bankDetails implements java.io.Serializable {
 	@org.kie.api.definition.type.Label("country")
 	private java.lang.String country;
 
-	@org.kie.api.definition.type.Label(value = "streetName")
+	@org.kie.api.definition.type.Label("streetName")
 	private java.lang.String streetName;
 
-	@org.kie.api.definition.type.Label(value = "contactNumber")
+	@org.kie.api.definition.type.Label("contactNumber")
 	private java.lang.String contactNumber;
+
+	@org.kie.api.definition.type.Label(value = "bankBranch")
+	private java.lang.String bankBranch;
+
+	@org.kie.api.definition.type.Label(value = "branchCode")
+	private java.lang.String branchCode;
 
 	public bankDetails() {
 	}
@@ -64,14 +70,33 @@ public class bankDetails implements java.io.Serializable {
 		this.contactNumber = contactNumber;
 	}
 
+	public java.lang.String getBankBranch() {
+		return this.bankBranch;
+	}
+
+	public void setBankBranch(java.lang.String bankBranch) {
+		this.bankBranch = bankBranch;
+	}
+
+	public java.lang.String getBranchCode() {
+		return this.branchCode;
+	}
+
+	public void setBranchCode(java.lang.String branchCode) {
+		this.branchCode = branchCode;
+	}
+
 	public bankDetails(java.lang.String bankName,
 			java.lang.String bankLocation, java.lang.String country,
-			java.lang.String streetName, java.lang.String contactNumber) {
+			java.lang.String streetName, java.lang.String contactNumber,
+			java.lang.String bankBranch, java.lang.String branchCode) {
 		this.bankName = bankName;
 		this.bankLocation = bankLocation;
 		this.country = country;
 		this.streetName = streetName;
 		this.contactNumber = contactNumber;
+		this.bankBranch = bankBranch;
+		this.branchCode = branchCode;
 	}
 
 }

@@ -6,12 +6,47 @@ package com.myspace.azurepoc;
 
 public class logitechDetails implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public logitechDetails() {
-    }
+	@org.kie.api.definition.type.Label(value = "logiTechModel")
+	private java.lang.String logiTechModel;
+	@org.kie.api.definition.type.Label(value = "version")
+	private java.lang.String version;
+	@org.kie.api.definition.type.Label(value = "mfgYear")
+	private java.lang.String mfgYear;
 
+	public logitechDetails() {
+	}
 
+	public java.lang.String getLogiTechModel() {
+		return this.logiTechModel;
+	}
 
+	public void setLogiTechModel(java.lang.String logiTechModel) {
+		this.logiTechModel = logiTechModel;
+	}
+
+	public java.lang.String getVersion() {
+		return this.version;
+	}
+
+	public void setVersion(java.lang.String version) {
+		this.version = version;
+	}
+
+	public java.lang.String getMfgYear() {
+		return this.mfgYear;
+	}
+
+	public void setMfgYear(java.lang.String mfgYear) {
+		this.mfgYear = mfgYear;
+	}
+
+	public logitechDetails(java.lang.String logiTechModel,
+			java.lang.String version, java.lang.String mfgYear) {
+		this.logiTechModel = logiTechModel;
+		this.version = version;
+		this.mfgYear = mfgYear;
+	}
 
 }
